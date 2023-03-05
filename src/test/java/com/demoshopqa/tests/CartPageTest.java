@@ -55,5 +55,6 @@ public class CartPageTest extends BaseClass {
 		String actualURL = checkoutpage.getCurrentURL();
 		Assert.assertTrue(actualURL.contains("checkout"));
 	}
+	
 
 }
