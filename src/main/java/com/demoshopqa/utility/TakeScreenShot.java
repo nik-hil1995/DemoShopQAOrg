@@ -8,7 +8,9 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-public class TakeScreenShot {
+import com.demoshopqa.baseTest.BaseClass;
+
+public class TakeScreenShot extends BaseClass{
 
 	public static void takeScreenShot(WebDriver driver, String filename) {
 		

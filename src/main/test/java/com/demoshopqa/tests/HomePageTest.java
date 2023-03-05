@@ -31,10 +31,8 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@AfterMethod
-	public void teardonw(ITestResult result) {
-		if(ITestResult.FAILURE==result.getStatus()) {
-			TakeScreenShot.takeScreenShot(driver, result.getName());
-		}
+	public void teardonw() {
+		
 		driver.quit();
 	}
 
@@ -44,8 +42,7 @@ public class HomePageTest extends BaseClass {
 		LoginPage loginpage = indexpage.clickTosignIn();
 		homepage = loginpage.loginToApp(prop.getProperty("UserEmail"), prop.getProperty("Password"));
 		boolean result = homepage.validateOrder();
-		Assert.assertTrue(result);
-		TakeScreenShot.takeScreenShot(driver, "snap1");
+		Assert.assertTrue(false);
 	}
 
 	@Test
